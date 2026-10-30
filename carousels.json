@@ -1,0 +1,5 @@
+[
+  {"title":"Linux: 10 commands every admin should know","date":"2026-10-30","topic":"Linux","pdf":"pdfs/2026-10-30-linux-commands.pdf","thumb":"","summary":"Practical commands with real examples for daily admin work."},
+  {"title":"Git: undo mistakes safely","date":"2026-10-29","topic":"Git","pdf":"pdfs/2026-10-29-git-undo.pdf","thumb":"","summary":"Reset, revert and reflog, step by step."},
+  {"title":"Docker: your first container in 5 steps","date":"2026-10-28","topic":"DevOps","pdf":"pdfs/2026-10-28-docker-first.pdf","thumb":"","summary":"From install to a running container."}
+]

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name – Daily IT Carousels</title>
+<meta name="description" content="A new IT, cloud and AI carousel every day, free to read and download.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F2F5F9;--ink:#0F2A43;--muted:#566A80;--line:#D3DCE7;--blue:#2F5BEA;--amber:#F5A524;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.1;margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.top{border-bottom:1px solid var(--line);background:var(--white)}
+header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;height:60px}
+.brand{font:800 20px "Bricolage Grotesque",sans-serif;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:20px;font-size:15px}
+nav a{color:var(--muted);text-decoration:none}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center;padding:64px 0}
+.hero h1{font-size:clamp(38px,6vw,68px);font-weight:800;letter-spacing:-.02em}
+.hero p{max-width:46ch;color:var(--muted);font-size:18px;margin:18px 0 26px}
+.btn{display:inline-block;border:0;border-radius:6px;padding:12px 20px;font:500 16px "IBM Plex Sans",sans-serif;background:var(--blue);color:#fff;text-decoration:none;cursor:pointer}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.latest{cursor:pointer;text-align:left;background:none;border:0;padding:0;color:inherit;font:inherit;position:relative}
+.latest .cover{box-shadow:12px 12px 0 var(--amber)}
+.latest small{display:block;margin-top:22px;color:var(--muted)}
+.cover{aspect-ratio:4/5;width:100%;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:18px;color:#fff;position:relative}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cover b{font:800 clamp(18px,2.2vw,26px)/1.1 "Bricolage Grotesque",sans-serif;position:relative}
+.cover span{position:relative;font-size:13px;opacity:.85;margin-bottom:8px}
+section{padding:40px 0}
+.tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 28px}
+.tools input{flex:1 1 220px;padding:11px 14px;border:1px solid var(--line);border-radius:6px;font:inherit;background:var(--white)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--white);border-radius:99px;padding:6px 14px;font:inherit;font-size:14px;cursor:pointer;color:var(--ink)}
+.chip[aria-pressed=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:24px}
+.card{background:none;border:0;padding:0;text-align:left;cursor:pointer;color:inherit;font:inherit}
+.card h3{font-size:18px;margin:12px 0 4px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card:hover .cover{transform:translateY(-3px)}
+.cover{transition:transform .15s}
+.empty{color:var(--muted);padding:30px 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--line)}
+.about p{color:var(--muted);max-width:60ch}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+dialog{border:0;border-radius:8px;padding:0;width:min(920px,94vw);height:min(90vh,820px);background:var(--white)}
+dialog::backdrop{background:rgba(15,42,67,.65)}
+.dh{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--line)}
+.dh h3{font-size:18px}
+.da{display:flex;gap:8px}
+.da .btn{padding:8px 14px;font-size:14px}
+dialog iframe{width:100%;height:calc(100% - 62px);border:0}
+@media(max-width:760px){.hero,.about{grid-template-columns:1fr;gap:28px}.hero{padding:36px 0}nav{display:none}.latest .cover{box-shadow:8px 8px 0 var(--amber)}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#" id="brand"></a>
+  <nav><a href="#library">Carousels</a><a href="#about">About</a><a href="#connect">Connect</a></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <h1 id="heroName"></h1>
+    <p id="heroTag"></p>
+    <a class="btn" href="#library">Browse all carousels</a>
+  </div>
+  <button class="latest" id="latest" aria-label="Open the latest carousel"></button>
+</div>
+
+<div class="wrap">
+<section id="library">
+  <h2>Daily carousels</h2>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search by title or topic" aria-label="Search carousels">
+    <div class="chips" id="chips"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>No carousels match. Try another topic or clear the search.</p>
+</section>
+
+<section class="about" id="about">
+  <div><h2>About</h2></div>
+  <div id="aboutText"></div>
+</section>
+
+<section id="connect">
+  <h2>Connect</h2>
+  <div class="links" id="links"></div>
+</section>
+</div>
+</main>
+
+<footer><div class="wrap" id="foot"></div></footer>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <div class="dh">
+    <h3 id="dt"></h3>
+    <div class="da">
+      <a class="btn" id="dl" download>Download PDF</a>
+      <button class="btn alt" id="close">Close</button>
+    </div>
+  </div>
+  <iframe id="frame" title="Carousel PDF"></iframe>
+</dialog>
+
+<script>
+/* ===== EDIT THIS BLOCK ONLY ===== */
+const CONFIG = {
+  name: "Your Name",
+  tagline: "IT, cloud and AI tips, one carousel every day. Free to read and download.",
+  about: [
+    "Write two or three lines about yourself here: your role, your experience, and who these carousels are for.",
+    "Add your certifications or the topics you cover, for example Linux, Cloud, Git, DevOps and AI."
+  ],
+  links: [
+    {label: "LinkedIn", url: "#"},
+    {label: "Facebook", url: "#"},
+    {label: "Telegram", url: "#"},
+    {label: "YouTube", url: "#"}
+  ]
+};
+/* ================================= */
+
+const COLORS = ["#0F2A43","#2F5BEA","#0E7C66","#7A3E9D","#B4442B"];
+const $ = id => document.getElementById(id);
+let items = [], topic = "All";
+
+function colorFor(t){let h=0;for(const c of t)h=(h*31+c.charCodeAt(0))%COLORS.length;return COLORS[h]}
+function fmt(d){return new Date(d+"T00:00:00").toLocaleDateString("en-IN",{day:"numeric",month:"short",year:"numeric"})}
+function cover(c){
+  const d = document.createElement("div");
+  d.className = "cover";
+  d.style.background = colorFor(c.topic);
+  if (c.thumb) { const i = document.createElement("img"); i.src = c.thumb; i.alt = ""; i.loading = "lazy"; d.appendChild(i); }
+  else { const s = document.createElement("span"); s.textContent = c.topic; const b = document.createElement("b"); b.textContent = c.title; d.append(s, b); }
+  return d;
+}
+function open(c){
+  $("dt").textContent = c.title;
+  $("dl").href = c.pdf;
+  $("frame").src = c.pdf + "#view=FitH";
+  $("dlg").showModal();
+}
+function card(c){
+  const b = document.createElement("button");
+  b.className = "card";
+  b.append(cover(c));
+  const h = document.createElement("h3"); h.textContent = c.title;
+  const p = document.createElement("p"); p.textContent = fmt(c.date) + " · " + c.topic;
+  b.append(h, p);
+  b.onclick = () => open(c);
+  return b;
+}
+function render(){
+  const q = $("q").value.trim().toLowerCase();
+  const list = items.filter(c => (topic==="All"||c.topic===topic) && (c.title+" "+c.topic+" "+(c.summary||"")).toLowerCase().includes(q));
+  $("grid").replaceChildren(...list.map(card));
+  $("empty").hidden = list.length > 0;
+}
+function chips(){
+  const topics = ["All", ...new Set(items.map(c=>c.topic))];
+  $("chips").replaceChildren(...topics.map(t => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.textContent = t; b.setAttribute("aria-pressed", t===topic);
+    b.onclick = () => { topic = t; chips(); render(); };
+    return b;
+  }));
+}
+function init(){
+  document.title = CONFIG.name + " – Daily IT Carousels";
+  $("brand").textContent = CONFIG.name;
+  $("heroName").textContent = CONFIG.name;
+  $("heroTag").textContent = CONFIG.tagline;
+  $("aboutText").replaceChildren(...CONFIG.about.map(t => { const p = document.createElement("p"); p.textContent = t; return p; }));
+  $("links").replaceChildren(...CONFIG.links.filter(l => l.url && l.url !== "#").map(l => {
+    const a = document.createElement("a"); a.className = "btn alt"; a.href = l.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = l.label; return a;
+  }));
+  $("foot").textContent = "© " + new Date().getFullYear() + " " + CONFIG.name + ". New carousel published every day.";
+  $("q").oninput = render;
+  $("close").onclick = () => $("dlg").close();
+  $("dlg").addEventListener("close", () => { $("frame").src = "about:blank"; });
+}
+async function load(){
+  init();
+  try {
+    const r = await fetch("carousels.json?v=" + Date.now());
+    items = await r.json();
+  } catch (e) {
+    $("grid").textContent = "Could not load carousels.json. Open this site through GitHub Pages or a local server, not by double-clicking the file.";
+    return;
+  }
+  items.sort((a,b) => b.date.localeCompare(a.date));
+  if (items.length) {
+    const l = items[0];
+    $("latest").replaceChildren(cover(l));
+    const s = document.createElement("small"); s.textContent = "Latest · " + fmt(l.date); $("latest").appendChild(s);
+    $("latest").onclick = () => open(l);
+  }
+  chips(); render();
+}
+load();
+</script>
+</body>
+</html>
