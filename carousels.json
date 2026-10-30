@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix Windows 11 Always On VPN After Update",
+    "date": "2026-10-30",
+    "topic": "Networking",
+    "pdf": "pdfs/2026-10-30-fix-windows-11-always-on-vpn-after-update.pdf",
+    "thumb": "",
+    "summary": "Quick steps to restore remote access after updates"
+  },
+  {
     "title": "Fix Windows 11 RDP Error 0xC000000D",
     "date": "2026-10-30",
     "topic": "Windows Server",
