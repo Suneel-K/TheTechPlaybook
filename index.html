@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name – Daily IT Carousels</title>
-<meta name="description" content="A new IT, cloud and AI carousel every day, free to read and download.">
+<title>TheTechPlaybook – Daily IT, Cloud and AI Carousels</title>
+<meta name="description" content="Free daily IT, cloud and AI carousels with step-by-step guides and tested commands. New playbook every day.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -117,11 +117,11 @@ dialog iframe{width:100%;height:calc(100% - 62px);border:0}
 <script>
 /* ===== EDIT THIS BLOCK ONLY ===== */
 const CONFIG = {
-  name: "Your Name",
-  tagline: "IT, cloud and AI tips, one carousel every day. Free to read and download.",
+  name: "TheTechPlaybook",
+  tagline: "Daily IT, cloud and AI playbooks. One carousel every day, free to read and download.",
   about: [
-    "Write two or three lines about yourself here: your role, your experience, and who these carousels are for.",
-    "Add your certifications or the topics you cover, for example Linux, Cloud, Git, DevOps and AI."
+    "TheTechPlaybook is a growing library of daily carousels for IT professionals, developers and trainees. Every day, one topic is turned into a clear, step-by-step guide covering Linux, Cloud, Git, DevOps, troubleshooting and AI. Each guide includes tested commands and real examples, so you can follow along on your own system. Read it online or download the PDF for free.",
+    "The goal is simple: make practical tech knowledge easy to learn, one slide at a time."
   ],
   links: [
     {label: "LinkedIn", url: "#"},
@@ -178,7 +178,7 @@ function chips(){
   }));
 }
 function init(){
-  document.title = CONFIG.name + " – Daily IT Carousels";
+  document.title = CONFIG.name + " – Daily IT, Cloud and AI Carousels";
   $("brand").textContent = CONFIG.name;
   $("heroName").textContent = CONFIG.name;
   $("heroTag").textContent = CONFIG.tagline;
@@ -198,6 +198,11 @@ async function load(){
     items = await r.json();
   } catch (e) {
     $("grid").textContent = "Could not load carousels.json. Open this site through GitHub Pages or a local server, not by double-clicking the file.";
+    return;
+  }
+  if (!items.length) {
+    $("latest").hidden = true;
+    $("grid").textContent = "The first carousel will appear here after the next daily run.";
     return;
   }
   items.sort((a,b) => b.date.localeCompare(a.date));
