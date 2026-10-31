@@ -1,5 +1,13 @@
 [
   {
+    "title": "Azure Developer CLI Deployment Previews",
+    "date": "2026-10-31",
+    "topic": "Azure",
+    "pdf": "pdfs/2026-10-31-azure-developer-cli-deployment-previews.pdf",
+    "thumb": "",
+    "summary": "Use PowerShell and Azure Developer CLI"
+  },
+  {
     "title": "Configure Microsoft Intune macOS Enrollment",
     "date": "2026-10-31",
     "topic": "Azure",
