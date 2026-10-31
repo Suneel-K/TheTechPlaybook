@@ -1,5 +1,13 @@
 [
   {
+    "title": "Audit Entra ID Risky Service Principals",
+    "date": "2026-10-31",
+    "topic": "Azure",
+    "pdf": "pdfs/2026-10-31-audit-entra-id-risky-service-principals.pdf",
+    "thumb": "",
+    "summary": "Secure your AI agent permissions"
+  },
+  {
     "title": "Azure Developer CLI Deployment Previews",
     "date": "2026-10-31",
     "topic": "Azure",
