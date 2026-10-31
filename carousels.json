@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure Microsoft Intune macOS Enrollment",
+    "date": "2026-10-31",
+    "topic": "Azure",
+    "pdf": "pdfs/2026-10-31-configure-microsoft-intune-macos-enrollment.pdf",
+    "thumb": "",
+    "summary": "A step by step configuration guide"
+  },
+  {
     "title": "Fix Windows 11 Always On VPN After Update",
     "date": "2026-10-30",
     "topic": "Networking",
