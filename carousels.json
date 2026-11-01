@@ -1,5 +1,13 @@
 [
   {
+    "title": "Secure Enterprise AI Agents With Project Perception",
+    "date": "2026-11-01",
+    "topic": "AI",
+    "pdf": "pdfs/2026-11-01-secure-enterprise-ai-agents-with-project-perceptio.pdf",
+    "thumb": "",
+    "summary": "A practical guide for IT administrators"
+  },
+  {
     "title": "Audit Entra ID Risky Service Principals",
     "date": "2026-10-31",
     "topic": "Azure",
