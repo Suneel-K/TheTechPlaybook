@@ -1,5 +1,13 @@
 [
   {
+    "title": "Master folder mirroring with robocopy",
+    "date": "2026-11-02",
+    "topic": "PowerShell",
+    "pdf": "pdfs/2026-11-02-master-folder-mirroring-with-robocopy.pdf",
+    "thumb": "",
+    "summary": "A guide for IT admins"
+  },
+  {
     "title": "Secure Enterprise AI Agents With Project Perception",
     "date": "2026-11-01",
     "topic": "AI",
