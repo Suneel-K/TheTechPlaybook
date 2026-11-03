@@ -1,5 +1,13 @@
 [
   {
+    "title": "Connect Azure Local and SQL Server with Dell",
+    "date": "2026-11-03",
+    "topic": "Azure",
+    "pdf": "pdfs/2026-11-03-connect-azure-local-and-sql-server-with-dell.pdf",
+    "thumb": "",
+    "summary": "A practical integration guide for IT administrators"
+  },
+  {
     "title": "Master folder mirroring with robocopy",
     "date": "2026-11-02",
     "topic": "PowerShell",
