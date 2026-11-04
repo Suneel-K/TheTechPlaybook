@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure CrowdStrike AI Kill Switch",
+    "date": "2026-11-04",
+    "topic": "AI",
+    "pdf": "pdfs/2026-11-04-configure-crowdstrike-ai-kill-switch.pdf",
+    "thumb": "",
+    "summary": "A practical guide for IT admins"
+  },
+  {
     "title": "Connect Azure Local and SQL Server with Dell",
     "date": "2026-11-03",
     "topic": "Azure",
