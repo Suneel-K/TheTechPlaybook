@@ -1,5 +1,13 @@
 [
   {
+    "title": "Reset an Active Directory user password with PowerShell",
+    "date": "2026-11-05",
+    "topic": "Active Directory",
+    "pdf": "pdfs/2026-11-05-reset-an-active-directory-user-password-with-power.pdf",
+    "thumb": "",
+    "summary": "A simple guide for IT administrators"
+  },
+  {
     "title": "Configure CrowdStrike AI Kill Switch",
     "date": "2026-11-04",
     "topic": "AI",
