@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure Exchange Online API Permissions",
+    "date": "2026-11-06",
+    "topic": "Microsoft 365",
+    "pdf": "pdfs/2026-11-06-configure-exchange-online-api-permissions.pdf",
+    "thumb": "",
+    "summary": "Critical update for IT administrators"
+  },
+  {
     "title": "Reset an Active Directory user password with PowerShell",
     "date": "2026-11-05",
     "topic": "Active Directory",
