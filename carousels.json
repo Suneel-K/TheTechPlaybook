@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix Veeam Boot Failures on AMD EPYC",
+    "date": "2026-11-07",
+    "topic": "IT Tips",
+    "pdf": "pdfs/2026-11-07-fix-veeam-boot-failures-on-amd-epyc.pdf",
+    "thumb": "",
+    "summary": "Quick troubleshooting guide for IT admins"
+  },
+  {
     "title": "Configure Exchange Online API Permissions",
     "date": "2026-11-06",
     "topic": "Microsoft 365",
