@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure Windows Hello Faster PIN Sign-In via GPO",
+    "date": "2026-11-08",
+    "topic": "Active Directory",
+    "pdf": "pdfs/2026-11-08-configure-windows-hello-faster-pin-sign-in-via-gpo.pdf",
+    "thumb": "",
+    "summary": "A practical guide for IT administrators"
+  },
+  {
     "title": "Fix Veeam Boot Failures on AMD EPYC",
     "date": "2026-11-07",
     "topic": "IT Tips",
