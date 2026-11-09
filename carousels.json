@@ -1,5 +1,13 @@
 [
   {
+    "title": "Secure SonicWall SSL-VPN MFA",
+    "date": "2026-11-09",
+    "topic": "Networking",
+    "pdf": "pdfs/2026-11-09-secure-sonicwall-ssl-vpn-mfa.pdf",
+    "thumb": "",
+    "summary": "Secure remote access against modern threats"
+  },
+  {
     "title": "Configure Windows Hello Faster PIN Sign-In via GPO",
     "date": "2026-11-08",
     "topic": "Active Directory",
