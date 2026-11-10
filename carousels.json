@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure OAuth for Exchange Migrations",
+    "date": "2026-11-10",
+    "topic": "Microsoft 365",
+    "pdf": "pdfs/2026-11-10-configure-oauth-for-exchange-migrations.pdf",
+    "thumb": "",
+    "summary": "Secure your Microsoft 365 mailbox migrations"
+  },
+  {
     "title": "Secure SonicWall SSL-VPN MFA",
     "date": "2026-11-09",
     "topic": "Networking",
