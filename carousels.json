@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix Windows Server Exchange Sign In Failures",
+    "date": "2026-11-11",
+    "topic": "Security",
+    "pdf": "pdfs/2026-11-11-fix-windows-server-exchange-sign-in-failures.pdf",
+    "thumb": "",
+    "summary": "A quick guide for IT administrators"
+  },
+  {
     "title": "Configure OAuth for Exchange Migrations",
     "date": "2026-11-10",
     "topic": "Microsoft 365",
