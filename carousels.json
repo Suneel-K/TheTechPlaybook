@@ -1,5 +1,13 @@
 [
   {
+    "title": "Manage Windows Server Roles With PowerShell",
+    "date": "2026-11-12",
+    "topic": "Windows Server",
+    "pdf": "pdfs/2026-11-12-manage-windows-server-roles-with-powershell.pdf",
+    "thumb": "",
+    "summary": "Manage roles and features with PowerShell"
+  },
+  {
     "title": "Fix Windows Server Exchange Sign In Failures",
     "date": "2026-11-11",
     "topic": "Security",
