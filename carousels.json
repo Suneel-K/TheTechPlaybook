@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix Windows Server Printing Issues After Updates",
+    "date": "2026-11-13",
+    "topic": "Security",
+    "pdf": "pdfs/2026-11-13-fix-windows-server-printing-issues-after-updates.pdf",
+    "thumb": "",
+    "summary": "Resolve post update print failures"
+  },
+  {
     "title": "Manage Windows Server Roles With PowerShell",
     "date": "2026-11-12",
     "topic": "Windows Server",
