@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure NTLM signing enforcement via Group Policy",
+    "date": "2026-11-14",
+    "topic": "Active Directory",
+    "pdf": "pdfs/2026-11-14-configure-ntlm-signing-enforcement-via-group-polic.pdf",
+    "thumb": "",
+    "summary": "Secure your enterprise environment against NTLM attacks"
+  },
+  {
     "title": "Fix Windows Server Printing Issues After Updates",
     "date": "2026-11-13",
     "topic": "Security",
