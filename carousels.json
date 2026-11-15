@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix Windows Activation Failures With PowerShell",
+    "date": "2026-11-15",
+    "topic": "PowerShell",
+    "pdf": "pdfs/2026-11-15-fix-windows-activation-failures-with-powershell.pdf",
+    "thumb": "",
+    "summary": "Resolve sudden SLMGR errors fast"
+  },
+  {
     "title": "Configure NTLM signing enforcement via Group Policy",
     "date": "2026-11-14",
     "topic": "Active Directory",
