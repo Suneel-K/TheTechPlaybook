@@ -1,5 +1,13 @@
 [
   {
+    "title": "Audit Exchange Online PowerShell Before Breaking Changes",
+    "date": "2026-11-16",
+    "topic": "Microsoft 365",
+    "pdf": "pdfs/2026-11-16-audit-exchange-online-powershell-before-breaking-c.pdf",
+    "thumb": "",
+    "summary": "Protect your migration automation from upcoming property retirements"
+  },
+  {
     "title": "Fix Windows Activation Failures With PowerShell",
     "date": "2026-11-15",
     "topic": "PowerShell",
