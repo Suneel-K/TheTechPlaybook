@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure Active Directory SSPR with Group Policy",
+    "date": "2026-11-17",
+    "topic": "Active Directory",
+    "pdf": "pdfs/2026-11-17-configure-active-directory-sspr-with-group-policy.pdf",
+    "thumb": "",
+    "summary": "A practical guide for IT administrators"
+  },
+  {
     "title": "Audit Exchange Online PowerShell Before Breaking Changes",
     "date": "2026-11-16",
     "topic": "Microsoft 365",
