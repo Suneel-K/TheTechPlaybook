@@ -1,5 +1,13 @@
 [
   {
+    "title": "Secure Edge with Lockdown Mode GPU API Restrictions",
+    "date": "2026-11-19",
+    "topic": "Active Directory",
+    "pdf": "pdfs/2026-11-19-secure-edge-with-lockdown-mode-gpu-api-restriction.pdf",
+    "thumb": "",
+    "summary": "Lock down browser rendering APIs for better security"
+  },
+  {
     "title": "Configure Windows Server in Microsoft Intune",
     "date": "2026-11-18",
     "topic": "Azure",
