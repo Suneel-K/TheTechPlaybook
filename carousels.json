@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix F5 BIG-IP RCE Vulnerabilities Fast",
+    "date": "2026-11-20",
+    "topic": "Security",
+    "pdf": "pdfs/2026-11-20-fix-f5-big-ip-rce-vulnerabilities-fast.pdf",
+    "thumb": "",
+    "summary": "Protect your infrastructure from remote code execution"
+  },
+  {
     "title": "Secure Edge with Lockdown Mode GPU API Restrictions",
     "date": "2026-11-19",
     "topic": "Active Directory",
