@@ -1,5 +1,13 @@
 [
   {
+    "title": "Migrate VMware VMs to Hyper-V with Windows Admin Center",
+    "date": "2026-11-21",
+    "topic": "Hyper-V",
+    "pdf": "pdfs/2026-11-21-migrate-vmware-vms-to-hyper-v-with-windows-admin-c.pdf",
+    "thumb": "",
+    "summary": "Use Windows Admin Center for smooth server moves"
+  },
+  {
     "title": "Fix F5 BIG-IP RCE Vulnerabilities Fast",
     "date": "2026-11-20",
     "topic": "Security",
