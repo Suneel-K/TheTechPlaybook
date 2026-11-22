@@ -1,5 +1,13 @@
 [
   {
+    "title": "Block Legacy 32-bit Apps on Windows Server",
+    "date": "2026-11-22",
+    "topic": "Windows Server",
+    "pdf": "pdfs/2026-11-22-block-legacy-32-bit-apps-on-windows-server.pdf",
+    "thumb": "",
+    "summary": "Secure your Windows Server 2028 environment"
+  },
+  {
     "title": "Migrate VMware VMs to Hyper-V with Windows Admin Center",
     "date": "2026-11-21",
     "topic": "Hyper-V",
