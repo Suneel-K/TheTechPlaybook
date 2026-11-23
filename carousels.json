@@ -1,5 +1,13 @@
 [
   {
+    "title": "Fix Forcepoint Windows 11 Printing Issues",
+    "date": "2026-11-23",
+    "topic": "IT Tips",
+    "pdf": "pdfs/2026-11-23-fix-forcepoint-windows-11-printing-issues.pdf",
+    "thumb": "",
+    "summary": "A simple registry fix to restore printer access"
+  },
+  {
     "title": "Block Legacy 32-bit Apps on Windows Server",
     "date": "2026-11-22",
     "topic": "Windows Server",
