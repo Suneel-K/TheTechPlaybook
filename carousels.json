@@ -1,5 +1,13 @@
 [
   {
+    "title": "Send From Email Aliases in Exchange Online",
+    "date": "2026-11-25",
+    "topic": "Microsoft 365",
+    "pdf": "pdfs/2026-11-25-send-from-email-aliases-in-exchange-online.pdf",
+    "thumb": "",
+    "summary": "Enable alias sending for your tenant"
+  },
+  {
     "title": "Fix Forcepoint Windows 11 Printing Issues",
     "date": "2026-11-23",
     "topic": "IT Tips",
