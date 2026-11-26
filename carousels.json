@@ -1,5 +1,13 @@
 [
   {
+    "title": "Configure Microsoft 365 Backup 10-Year Recovery",
+    "date": "2026-11-26",
+    "topic": "Azure",
+    "pdf": "pdfs/2026-11-26-configure-microsoft-365-backup-10-year-recovery.pdf",
+    "thumb": "",
+    "summary": "Master long-term data retention and Entra protection"
+  },
+  {
     "title": "Send From Email Aliases in Exchange Online",
     "date": "2026-11-25",
     "topic": "Microsoft 365",
